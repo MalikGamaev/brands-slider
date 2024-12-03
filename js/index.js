@@ -1,4 +1,7 @@
-const slider = new Swiper('.brand-slider', {
+
+
+
+new Swiper('.brand-slider', {
 
 
 	pagination: {
@@ -6,7 +9,6 @@ const slider = new Swiper('.brand-slider', {
 		clickable: true,
 	},
 });
-
 
 
 
