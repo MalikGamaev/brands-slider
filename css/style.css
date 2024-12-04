@@ -43,6 +43,7 @@ html, body {
 	
 }
 .brand-slider__title {
+	background: linear-gradient(90deg, #f8f8f8 1.5%, #ffffff 100%);
 	padding: 16px;
 }
 .brand-slider__title h2 {
@@ -56,20 +57,23 @@ html, body {
 
 .brand-slider {
 	
-	height: 120px;
+	height: 140px;
 	padding: 16px;
-	background-color: rgba(248, 248, 248, 1);
+	background-color: #F8F8F8;
 	position: relative;
 }
 
+.brand-slider .swiper-pagination {
+	
+}
 .brand-slider__items {
 	display: flex;
 	
 	
 }
 .brand-slider__slide{
-	width: 100%;
-	margin-right: 16px;
+	width: 80%;
+	
 	background-color: #fff;
 	height: 72px;
 	padding: 16px;
@@ -94,6 +98,55 @@ img {
 	background: url('../image/go.svg');
 }
 
-.swiper-pagination {
+.brand-slider::before, .brand-slider::after{
+	content: '';
+	position: absolute;
+	top: 10px;
+	
+	width: 45px;
+	height: 81px;
+	z-index: 10;
+	
+}
 
+.brand-slider::before {
+	left: 0;
+	background: linear-gradient(90deg, #f8f8f8 16.85%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.brand-slider::after {
+	right: 0;
+	background: linear-gradient(270deg, #f8f8f8 16.85%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.brand-slider .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #B5B6BC;
+	
+}
+
+@media (min-width: 768px) {
+	.brand-slider__items {
+		flex-wrap: wrap;
+		column-gap: 24px;
+		row-gap: 16px;
+		
+	}
+	.brand-slider {
+		height: 100%;
+		padding: 24px;
+	}
+	.brand-slider::before, .brand-slider::after {
+		display: none;
+	}
+
+	.brand-slider__slide{
+		max-width: 224px;
+		
+		
+	}
+	.brand-slider__title{
+		padding-left: 24px;
+	}
 }

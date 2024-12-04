@@ -1,16 +1,18 @@
 
 
+if (window.screen.width < 768) {
+	new Swiper('.brand-slider', {
 
-new Swiper('.brand-slider', {
+		slidesPerView: 'auto',
+		spaceBetween: 16,
 
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+}
 
-	spaceBetween: 16,
-
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
 
 
 
