@@ -1,0 +1,1 @@
+https://malikgamaev.github.io/brands-slider/
