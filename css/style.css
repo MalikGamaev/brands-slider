@@ -155,7 +155,7 @@ img {
 		
 		width: 24px;
 		height: 24px;
-		background: url('/image/showMore.svg') no-repeat 50% 50%;
+		background: url('../image/showMore.svg') no-repeat 50% 50%;
 	}
 	.brand-slider {
 		height: 100%;
