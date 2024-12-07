@@ -55,7 +55,7 @@ html, body {
 	letter-spacing: -0.2px;
 }
 
-.brand-slider {
+.brand-slider__wrapper {
 	
 	height: 140px;
 	padding: 16px;
@@ -63,9 +63,7 @@ html, body {
 	position: relative;
 }
 
-.brand-slider .swiper-pagination {
-	
-}
+
 .brand-slider__items {
 	display: flex;
 	
@@ -87,18 +85,18 @@ img {
 	vertical-align: top;
 	
 }
-.image--slide {
+.brand-slider__image--slide {
 	flex-shrink: 1;
 }
 
-.icon--slide {
+.brand-slider__icon--slide {
 	display: block;
 	width: 40px;
 	height: 40px;
 	background: url('../image/go.svg');
 }
 
-.brand-slider::before, .brand-slider::after{
+.brand-slider__wrapper::before, .brand-slider__wrapper::after{
 	content: '';
 	position: absolute;
 	top: 10px;
@@ -109,17 +107,17 @@ img {
 	
 }
 
-.brand-slider::before {
+.brand-slider__wrapper::before {
 	left: 0;
 	background: linear-gradient(90deg, #f8f8f8 16.85%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
-.brand-slider::after {
+.brand-slider__wrapper::after {
 	right: 0;
 	background: linear-gradient(270deg, #f8f8f8 16.85%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
-.brand-slider .swiper-pagination-bullet {
+.brand-slider__wrapper .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
 	background-color: #B5B6BC;
@@ -140,6 +138,7 @@ img {
 
 	
 	.brand-slider__button{
+		width: 133px;
 		display: flex;
 		column-gap: 8px;
 		margin-top: 16px;
@@ -151,19 +150,19 @@ img {
 		cursor: pointer;
 	}
 
-	.icon--read-more {
+	.brand-slider__icon--read-more {
 		
 		width: 24px;
 		height: 24px;
 		background: url('../image/showMore.svg') no-repeat 50% 50%;
 	}
-	.brand-slider {
+	.brand-slider__wrapper {
 		height: 100%;
 		padding: 24px;
 		
 		
 	}
-	.brand-slider::before, .brand-slider::after {
+	.brand-slider__wrapper::before, .brand-slider::after {
 		display: none;
 	}
 
@@ -175,18 +174,10 @@ img {
 	.brand-slider__title{
 		padding-left: 24px;
 	}
-
-	
-	
 }
 
 @media (min-width: 1120px) {
-	.brand-slider__container {
-		
-		
-		
-		
-	}
+	
 	.brand-slider__items{
 		width: 1120px;
 		
@@ -197,7 +188,7 @@ img {
 		
 	}
 
-	.brand-slider__wrapper {
+	.brand-slider {
 		background-color: #f8f8f8;
 		width: 100%;
 		display: flex;
