@@ -37,7 +37,7 @@ html, body {
 	overflow: hidden;
 }
 
-.brand-slider__container {
+.brand-slider {
 	border-top: 1px solid #D9FFF5;
 	
 	
@@ -188,7 +188,7 @@ img {
 		
 	}
 
-	.brand-slider {
+	.brand-slider__main {
 		background-color: #f8f8f8;
 		width: 100%;
 		display: flex;
