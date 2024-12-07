@@ -109,12 +109,12 @@ img {
 
 .brand-slider__wrapper::before {
 	left: 0;
-	background: linear-gradient(90deg, #f8f8f8 1.2%, rgba(248, 248, 248, 0.0001) 100%);
+	background: linear-gradient(90deg, #f8f8f8 1.1%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
 .brand-slider__wrapper::after {
 	right: 0;
-	background: linear-gradient(270deg, #f8f8f8 1.2%, rgba(248, 248, 248, 0.0001) 100%);
+	background: linear-gradient(270deg, #f8f8f8 1.1%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
 .brand-slider__wrapper .swiper-pagination-bullet {
